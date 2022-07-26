@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dinosaur.org</title>
+  </head>
+    <style>
+      
+      .intro {
+        text-align: middle
+      }
+      
+      #dinosaur {
+        width: 600px;
+        height: auto;
+        display: block;
+        float: right
+      }
+      
+      body {
+        background-color: orange
+      }
+      #TypeOfDinosaurs{
+        float:right;
+      }
+      </style>
+  <body>
+    <h1>
+      Dinosaur.org
+    </h1>
+    <hr>
+    <img id="trex" onmouseover="ChangeFirstPicture()" src="https://media.istockphoto.com/photos/dinosaur-tyrannosaurus-rex-on-top-of-mountain-rock-picture-id1345313768?b=1&k=20&m=1345313768&s=170667a&w=0&h=AiTLpo9BklwwKx2tLY7SrOwkqgGaNrVz4FRG8tJH9iM=">
+    <img id="dinosaur" onclick="ChangeSecondPicture()" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5823/production/_125336522_0dde1ed4-5604-428b-a707-b889f1641ff8.jpg">
+    <br>
+    <p id="intro">
+      Dinosaurs used to live all over the land. They were the most dominant animals of there time. They are extremly advanced animals.
+      I built this website because of my love of dinosaurs(mister Ethan helped me decide). I hope you like it.
+    </p>
+    <br>
+    <button type="button" onclick="ChangeIntro();">
+      Press me to change the paragragh
+    </button>
+    <p id="TypeOfDinosaurs" onmouseover="ChangeTypeOfDinosaurs()">
+      Hover over to change paragraph. There are two main types of dinosaurs Saurischain and Ornithischain. Ornithischains are most plant-eaters. There pubis bone tilts backwards. Saurischains are mostly meat-eaters. But, they also include saropods - long necked plant-eaters. There pubis tilts forward.
+    </p>
+    <h1>
+      Refresh the page to see the oringonal paragraphs and pictures. The ones you changed
+    </h1>
+    <a href="https://kids.nationalgeographic.com/animals/prehistoric">
+Dino Website
+    </a>
+    <select>
+      <option></option>
+    </select>
+    <script>
+      var changed = false;
+      var changeDinosaur = false;
+      window.alert("welcome to Dinosaur.org v.1 Thank you for visiting!!!")
+    function ChangeIntro() {
+      document.getElementById("intro").innerHTML = "Dinosaurs lived during diferent time periods. Dinosaurs lived during three time periods: the Triassic, the Jurassic, and the Cretaceous. The Triassic was he first for the dionsaurs.  It began 251 mya(million years ago). The Cretaceous was the last for the dinosaurs. It ended 66 mya."
+    }
+     function ChangeTypeOfDinosaurs() {
+       document.getElementById("TypeOfDinosaurs").innerHTML = "Dinosaurs are really interesting. But, what are NOT dinosaurs. Prehistoric marine creatures are not dinsaurs. They have flippers or webbed feet. Pterosaurs are not dinosaurs. They are big and small. Some have no teeth."
+     }
+      function ChangeFirstPicture() {
+        if (changed == false) {
+          changed = true
+        document.getElementById("trex").src = "https://images.newscientist.com/wp-content/uploads/2021/02/25121249/257236_web.jpg"
+        window.alert("You changed a picture");
+        }
+      }
+      function ChangeSecondPicture() {
+        if (changeDinosaur == false) {
+          changeDinosaur = true
+        document.getElementById("dinosaur").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirm-XJjuKc_V73sPDhpFcge8NUKrVGuzShg&usqp=CAU"
+        window.alert("You changed a picture")
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>extra cats</title>
+</head>
+<style>
+ 
+    body{
+background-color:red
+    }
+  
+</style>
+<body>
+<h1 style="color:orange;"onmouseover="cool();" id="cat">These are all the cat breeds</h1>
+<p id="breeds">  </p>
+<select id="FirstCats" style="color:yellow;"onchange="catbreeds()">
+<optgroup label="all the little cats! :3">
+<option>all the little cats! :3</option>
+<option value="Munchkin cat">Munchkin cat</option>
+<option value="Singapura cat">Singapura cat</option>
+<option value="Dwelf cat">Dwelf cat</option>
+<option value="Napoleon cat">Napoleon cat</option>
+<option value="Bambino cat">Bambino cat</option>
+<option value="Devon Rex">Devon Rex </option>
+<option value="American Curl">American Curl </option>
+<option value="Cornish Rex">Cornish Rex </option>
+<option value="Japanese Bobtail">Japanese Bobtail </option>
+<option value="Balinese cat">Balinese cat  </option>
+</select>
+<br>
+<select id="SecondCats" style="color:orange;"onchange="catbreeds2()">
+<optgroup label="other cats!:3">
+<option>other cats!:3</option>
+<option value="Maine Coon">Maine Coon</option>
+<option value="British Shorthair">British Shorthair</option>
+<option value="Bengal cat">Bengal cat</option>
+<option value="Siamese cat">Siamese cat</option>
+<option value="Sphynx cat"> Sphynx cat</option>
+<option value="Ragdoll">Ragdoll</option>
+<option value="Norwegian Forest cat">Norwegian Forest cat</option>
+<option value="Scottish Fold">Scottish Fold</option>
+<option value="Siberian cat">Siberian cat</option>
+</select>
+<br>
+<select id="ThirdCats" style="color:yellow;"onchange="catbreeds3()">
+<optgroup label="more other cats!:3">
+<option> more other cats!:3</option>
+<option>Persian cat</option>
+<option>Savannah cat</option>
+<option>American Shorthair</option>
+<option>Exotic Shorthair</option>
+<option> Sphynx cat</option>
+<option>Turkish Angora</option>
+<option>European shorthair</option>
+<option>Russian Blue</option>
+<option>Himalayan cat</option>
+ </optgroup>
+</select>
+<br>
+<select id="FourthCats" style="color:orange;"onchange="catbreeds4()">
+<optgroup label=" more more other cats!:3">
+<option> more more other cats!:3</option>
+<option>Birman</option>
+<option>Chartreux</option>
+<option>Oriental Shorthair</option>
+<option>Abyssinian</option>
+<option>Bombay cat</option>
+<option>Ragamuffin</option>
+<option>Kinkalow</option>
+<option>Van cat</option>
+<option>British Longhair</option>
+</select>
+<script>
+function catbreeds() {
+let x = document.getElementById("FirstCats").value
+document.getElementById("breeds").innerHTML = "You chose cat: " + x;
+}
+ function catbreeds2() {
+let x = document.getElementById("SecondCats").value
+document.getElementById("breeds").innerHTML = "You chose cat: " + x;
+}
+  function catbreeds3() {
+let x = document.getElementById("ThirdCats").value
+document.getElementById("breeds").innerHTML = "You chose cat: " + x;
+}
+   function catbreeds4() {
+let x = document.getElementById("FourthCats").value
+document.getElementById("breeds").innerHTML = "You chose cat: " + x;
+}
+function cool() {
+document.getElementById("cat").innerHTML = "there are so many!"
+}
+</script>
+ <img id="cats" style="width: 300px;"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEqk1VgCvzWtkZDjMEw1ADgrZ8KRTBEqJFQ&usqp=CAU">
+<a href="index2.html">
+<button style="color:orange;" >go back</button>
+</a>
+</body>
+</html>

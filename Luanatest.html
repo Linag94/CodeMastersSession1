@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cats are awesome</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+  <style>
+
+.mix {border-style : dotted dashed solid double;}
+</style>
+<style>
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.a {
+  
+}
+
+    body{
+background-color:red
+    }
+    h1{
+
+    }
+    .test{
+      border: 10px solid darkblue;
+      border-image: url(border.png) 30 round;
+    }
+    img{
+
+	height:300px;
+   width:300px;
+
+}
+  div.a {
+  text-align: center;
+}
+
+  body {
+  background-image: url('https://pbs.twimg.com/media/EZXozTnXYAEWV5R.jpg:large');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+  </style>
+<body>
+                                                                                         
+<div class="a">
+<H1  style="color:Darkorange;"class="mix">Have you ever heard of warrior cats?</H1>
+<h1 id="brightheart" style="color:yellow;">Its a very interesting series of cats and drama and murder.Curently my favoriete cat is a cute ginger se-cat called Squirrelpaw</h1>
+<H1 id="sandstorm" style="color:yellow;">Squirrelpaw is a ThunderClan apprentice, and one of the daughters of Firestar, the Clan leader, and Sandstorm. </H1>
+<H1 id="tawnypelt" style="color:yellow;">"we could have delt with,I could have lured him out and then-"</H1> <br>
+
+  <H1 style="color:yellow;">cats have super strong powers of cuteness</H1>
+<img id="cats" style="width: 200px;"
+src="https://blogclan.katecary.co.uk/wp-content/uploads/2017/05/20_squirrelflight_by_toboe5tails-dbaivm3-266x300.png">
+<br>
+
+    <button id="btn" type="button" onclick="Cat();"> Cute Squirrelpaw! </button>
+  <p id="Time"></p>
+  <button type="button" onclick="date();">Time</button>
+    <script>
+      let bluestar = true
+      function date() {
+        if (bluestar) {
+          bluestar = false
+        const d = new Date();
+        let time = d.toLocaleTimeString();
+        document.getElementById("Time").innerHTML = time;
+        document.getElementById("brightheart").style.color = "red";
+        document.getElementById("sandstorm").style.color = "red";
+        document.getElementById("tawnypelt").style.color = "red";
+         document.getElementById("Time").style.fontSize = "x-Large";
+             document.getElementById("Time").style.display = "block";
+        }
+        else {document.getElementById
+         bluestar= true
+          document.getElementById("Time").style.display = "none";
+        }
+        
+      }
+      window.alert("do you like cats?")
+     var cat = true;
+    function Cat(){
+      if (cat) {
+        cat = false;
+        document.getElementById("cats").src = "https://pa1.narvii.com/6917/d331c27174497c7cde677b2683db040782be40dbr1-1502-1497_hq.gif"
+     document.getElementById("btn").innerHTML = "excited Squirrelpaw!"
+      } else {
+       cat = true;
+        document.getElementById("cats").src = "https://blogclan.katecary.co.uk/wp-content/uploads/2017/05/20_squirrelflight_by_toboe5tails-dbaivm3-266x300.png"
+     document.getElementById("btn").innerHTML = "cute Squirrelpaw!"
+      }
+    }
+    </script>
+    <br>
+    
+<a href="Luanaextra.html"><button> extra </button>
+</a>
+
+
+
+</body>
